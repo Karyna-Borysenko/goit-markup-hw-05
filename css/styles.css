@@ -129,6 +129,8 @@ img {
 .header-link {
   display: block;
   color: var(--main-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .current {
@@ -141,6 +143,9 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--body-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-mail-icon,
@@ -356,6 +361,10 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .team-instagram-icon,
@@ -401,6 +410,9 @@ img {
   align-items: center;
   padding: 16px 32px;
   color: var(--icon-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-icon {
@@ -440,6 +452,11 @@ img {
   letter-spacing: 0.03em;
   border-style: none;
   color: var(--main-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .portfolio-filter-item:not(:last-child) {
@@ -478,6 +495,9 @@ img {
 .portfolio-card {
   max-width: 370px;
   display: block;
+
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .portfolio-card:hover,
@@ -578,6 +598,8 @@ img {
 .footer-item-mail,
 .footer-item-phone {
   color: var(--used-transparent-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-item-mail:hover,
@@ -620,6 +642,10 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--used-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .footer-instagram-icon,
@@ -631,8 +657,8 @@ img {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: var(--accent-color);
   color: var(--used-color);
+  background-color: var(--accent-color);
 }
 
 /*------------------------------------------------------------------Модальное окно------------------------------------------------------------------*/
