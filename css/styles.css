@@ -301,8 +301,28 @@ img {
   margin-right: var(--main-gap);
 }
 
+.speciality-item {
+  position: relative;
+}
 .speciality-img {
   width: 370px;
+}
+
+.speciality-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--used-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*------------Секция Наша команда------------*/
@@ -692,7 +712,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: rotate(170deg);
+  transform: rotate(90deg);
 }
 
 .modal {
